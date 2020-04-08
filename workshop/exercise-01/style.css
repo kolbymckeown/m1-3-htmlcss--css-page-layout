@@ -1,0 +1,43 @@
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    
+}
+
+.container {
+    min-height: 100vh;
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.nav, .footer {
+        min-width: 100%;
+        justify-content: center;
+        color: ghostwhite;
+
+}
+
+.nav {
+    top: 0;
+    position: absolute;
+    background-color: #404040;
+    display: flex;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    background-color: #404040;
+    display: flex;
+}
+
+
+
+

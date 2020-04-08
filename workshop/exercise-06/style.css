@@ -7,7 +7,45 @@ body {
 }
 
 .nav-dropdown {
+    padding: 25px;
     color: #fff;
     text-decoration: none;
+    position: relative;
     display: inline-block;
+}
+
+
+/* dropdown-menu */
+.drop-menu {
+    display: none;
+}
+
+
+/* menu-list */
+.list {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+li {
+    padding: 10px;
+}
+
+.nav-dropdown:hover > .drop-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: blue;
+}
+
+.menu-list > li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.list > li:hover {
+    background-color: dodgerblue;
+    padding: 10px;
 }
