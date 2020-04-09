@@ -9,8 +9,55 @@ body {
   justify-content: center;
 }
 
+@keyframes intro {
+  from {
+      transform: translateX(100%);
+      opacity: 0.2;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
 .fast {
+  animation: intro 1s ease-in-out;
 }
 
 .cool {
+  padding: 25px;
+  border: 0;
+  background-color: dodgerblue;
+  color: ghostwhite;
+  box-shadow: 0px 5px 15px black;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@keyframes button {
+  from {
+      transform: scale(1);
+  }
+
+  25% {
+      transform: scale(1.5);
+  }
+
+  75% {
+      transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
+  to {
+      transform: scale(1);
+  }
+}
+
+.cool:hover {
+  animation: button 1s ease-in-out;
 }
